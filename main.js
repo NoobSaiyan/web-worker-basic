@@ -14,7 +14,7 @@ blockerButton.addEventListener('click', event => {
 
 workerButton.addEventListener('click', event => {
   result.innerHTML = `Worker Sum Called`
-  worker.postMessage(10000000000) // can send anything i am just sending something usefull
+  worker.postMessage(10000000000) // can send anything i am just sending something useful
   worker.onmessage = event => {
     result.innerHTML = `Worker Sum : ${event.data}`
   }
